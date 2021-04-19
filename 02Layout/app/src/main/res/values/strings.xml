@@ -23,6 +23,8 @@
     <string name="table_layout_4_save">Save</string>
     <string name="table_layout_4_save_shortcut">Ctrl + S</string>
 
-
+    <!--RelativeLayout elements strings-->
+    <string name="reminder">reminder</string>
+    <string name="done">done</string>
 
 </resources>
