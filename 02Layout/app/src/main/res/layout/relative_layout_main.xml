@@ -5,4 +5,36 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp" >
 
+    <AnalogClock
+        android:id="@+id/analog_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+    <EditText
+        android:layout_below="@id/analog_clock"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reminder" />
+    <Spinner
+        android:id="@+id/dates"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/times" />
+    <Spinner
+        android:id="@id/times"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentRight="true" />
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dates"
+        android:layout_alignParentRight="true"
+        android:text="@string/done" />
 </RelativeLayout>
