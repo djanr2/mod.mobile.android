@@ -17,5 +17,12 @@
     <string name="send">Send</string>
     <string name="validate">validate</string>
 
+    <!--TableLayout elements strings-->
+    <string name="table_layout_4_open">Open</string>
+    <string name="table_layout_4_open_shortcut">Ctrl + O</string>
+    <string name="table_layout_4_save">Save</string>
+    <string name="table_layout_4_save_shortcut">Ctrl + S</string>
+
+
 
 </resources>
