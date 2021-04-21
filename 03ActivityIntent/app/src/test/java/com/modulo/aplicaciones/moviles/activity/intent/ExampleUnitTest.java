@@ -1,4 +1,4 @@
-package com.modulo.aplicaciones.moviles.activity.intents;
+package com.modulo.aplicaciones.moviles.activity.intent;
 
 import org.junit.Test;
 
