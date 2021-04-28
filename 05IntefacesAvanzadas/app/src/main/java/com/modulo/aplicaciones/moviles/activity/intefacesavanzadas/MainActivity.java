@@ -3,15 +3,16 @@ package com.modulo.aplicaciones.moviles.activity.intefacesavanzadas;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-enum OPERATION{DIV, ADD, SUB, MUL}
+
 
 public class MainActivity extends AppCompatActivity {
 
-    private static TextView output_screen;
+    private TextView output_screen;
     private Button num_0;
     private Button num_1;
     private Button num_2;
@@ -30,9 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private Button sym_dot;
     private Button sym_equal;
     private boolean isDoted;
-    private boolean isOperated;
     private double num;
-    OPERATION op;
+    private OPERATION op;
 
 
     @Override
@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
             {
                 String output = "0";
                 isDoted= false;
-                isOperated = false;
                 op=null;
                 num= 0;
                 output_screen.setText(output);
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 num = Double.parseDouble((String)output_screen.getText());
                 String output = "0";
-                isOperated = true;
+                isDoted= false;
                 op=OPERATION.ADD;
                 output_screen.setText(output);
             }
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 num = Double.parseDouble((String)output_screen.getText());
                 String output = "0";
-                isOperated = true;
+                isDoted= false;
                 op=OPERATION.SUB;
                 output_screen.setText(output);
             }
@@ -95,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 num = Double.parseDouble((String)output_screen.getText());
                 String output = "0";
-                isOperated = true;
+                isDoted= false;
                 op=OPERATION.MUL;
                 output_screen.setText(output);
             }
@@ -106,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 num = Double.parseDouble((String)output_screen.getText());
                 String output = "0";
-                isOperated = true;
+                isDoted= false;
                 op=OPERATION.DIV;
                 output_screen.setText(output);
             }
@@ -118,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
                 String output = "";
                 double num2 = Double.parseDouble((String)output_screen.getText());
 
-                isOperated = false;
                 isDoted = false;
 
                 switch (op){
@@ -139,7 +137,6 @@ public class MainActivity extends AppCompatActivity {
                 output = ""+num;
                 num = 0;
                 isDoted= false;
-                isOperated = false;
                 op=null;
                 output_screen.setText(output);
             }
@@ -273,13 +270,15 @@ public class MainActivity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
+
                 String output = (String) output_screen.getText();
-                if (output.contains("."));
+                if (output.contains("."))
                     isDoted = true;
                 output+=".";
                 if(!isDoted)
                     output_screen.setText(output);
                 isDoted=true;
+
             }
         });
     }
