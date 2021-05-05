@@ -1,4 +1,7 @@
 package com.modulo.aplicaciones.moviles.activity.media.activity;
 
-public class AudioActivity {
+import android.app.Activity;
+
+public class AudioActivity extends Activity {
+
 }

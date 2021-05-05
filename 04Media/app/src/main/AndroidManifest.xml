@@ -18,6 +18,12 @@
         <activity android:name=".activity.ImageActivity"
                 android:parentActivityName=".MainActivity">
         </activity>
+        <activity android:name=".activity.VideoActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".activity.AudioActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>
