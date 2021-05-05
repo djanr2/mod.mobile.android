@@ -5,4 +5,6 @@
     <string name="button_audio">Acceso a audio</string>
     <string name="button_start">iniciar Slider</string>
     <string name="button_stop">Parar Slider</string>
+    <string name="button_audio_stop">stop</string>
+    <string name="button_audio_start">start</string>
 </resources>
