@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Media</string>
+    <string name="button_image">Acceso a imagenes</string>
+    <string name="button_video">Acceso a video</string>
+    <string name="button_audio">Acceso a audio</string>
+    <string name="button_start">iniciar Slider</string>
+    <string name="button_stop">Parar Slider</string>
 </resources>
