@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         for (DataModel data : allData) {
             String log = "Id: " + data.getPk() + " ,Name: " + data.getNombre() + " ,mail: " +
                     data.getMail();
-            // Writing Contacts to log
+
             Log.d("<tag>", log);
         }
     }
